@@ -27,8 +27,8 @@ function viewCart() {
         newCart.push(` ${getCart()[i].itemName} at $${getCart()[i].itemPrice}`)
       } 
     var lastCartItem = []
-    lastCartItem.push(` ${getCart()[cart.length - 1].itemName} at $${getCart()[cart.length - 1].itemPrice}`)
-    return `In your cart, you have${newCart}, and${lastCartItem}.`
+    lastCartItem.push(`${getCart()[cart.length - 1].itemName} at $${getCart()[cart.length - 1].itemPrice}`)
+    return `In your cart, you have${newCart}, and ${lastCartItem}.`
   }
 }
 
